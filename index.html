@@ -11,16 +11,22 @@
     <main>
         <h1>Esercitazione del 29 ottobre 2021</h1>
 
-        <section>
+        <section class="palindroma">
             <h2>Palindroma</h2>
             <p>
                 Chiedere all’utente di inserire una parola.<br>
                 Creare una funzione per capire se la parola inserita è palindroma
             </p>
+            <label for="word">Inserire parola:</label>
+            <input type="text" id="palindroma-input">
+            <button id="palindroma-btn">Verifica la parola</button>
+            <div id="palindroma-output">
+<!--                 <span class="error">La parola inserita non è palindroma.</span> -->
+            </div>
 
         </section>
 
-        <section>
+        <section class="even-odd">
             <h2>Pari e Dispari</h2>
             <p>
                 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.<br>
@@ -29,6 +35,7 @@
                 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)<br>
                 Dichiariamo chi ha vinto.
             </p>
+            <button id="even-odd-btn">Avvia lo script</button>
 
         </section>
 
