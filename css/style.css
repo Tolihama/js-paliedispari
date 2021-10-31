@@ -1,0 +1,38 @@
+main {
+    min-height: 100vh;
+    box-shadow: 0 0 50px 20px powderblue;
+}
+
+.text-success {
+    background-color: rgba(0,255,0,.3);
+}
+
+.text-success::before {
+    content: '\f058';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 6px;
+}
+
+.text-warning {
+    background-color: rgba(0,0,0,.5);
+}
+
+.text-warning::before {
+    content: '\f071';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 6px;
+}
+
+.text-danger {
+    background-color: rgba(255,0,0,.2);
+}
+
+.text-danger::before {
+    content: '\f057';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 6px;
+}
+
+#even-or-odd-output {
+    background-color: rgba(0,0,0,.1);
+}
