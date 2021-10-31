@@ -74,11 +74,11 @@ evenOddBtn.addEventListener('click', function() {
     } else if (oddRadio.checked) {
         userChoice = 'odd';
     } else {
-        typingEffect(evenOddOutput, 'Selezionare "Pari" oppure "Dispari" per proseguire.', 50);
+        typingEffect(evenOddOutput, 'Selezionare "Pari" oppure "Dispari" per proseguire.', 20);
         return;
     }
-    if (userNumber < 1 || userNumber > 5) {
-        typingEffect(evenOddOutput, 'Si prega di selezionare un numero compreso tra 1 e 5', 50);
+    if (userNumber < 1 || userNumber > 5 || isNaN(userNumber)) {
+        typingEffect(evenOddOutput, 'Si prega di selezionare un numero compreso tra 1 e 5.', 20);
         return;
     } else {
         let userChoiceIta = '';
@@ -111,7 +111,6 @@ evenOddBtn.addEventListener('click', function() {
         La somma dei due numeri è ${sum} ed è un numero ${sumTypeIta}.<br>
         ${winner}`;
 
-/*         typingEffect(evenOddOutput, output, 50); */
         evenOddOutput.innerHTML = output;
     }
 });
@@ -129,7 +128,7 @@ function oddOrEven(number) {
 
 
 // TYPING EFFECT
-/* function typingEffect(domElement, string, timeInterval) {
+function typingEffect(domElement, string, timeInterval) {
     const stringToType = string;
     let i = 0;
     addChar();
@@ -147,4 +146,4 @@ function oddOrEven(number) {
 
 function addBreakRule(domElement) {
     domElement.innerHTML += '<br>';
-} */
+}
