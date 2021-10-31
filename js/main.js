@@ -9,6 +9,10 @@ palTrigger.addEventListener('click', function() {
     const input = palInput.value.trim().toLowerCase();
     let isPalindroma = false;
     palOutput.classList.remove('d-none');
+    if (input === '') {
+        palOutput.innerHTML = '<div class="text-warning p-2">Inserire la parola da valutare.</div>';
+        return;
+    }
     if (!specialCharCheck(input)) {
         isPalindroma = palindromaCheck(input);
         if (isPalindroma) {
